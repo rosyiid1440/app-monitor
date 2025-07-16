@@ -1,0 +1,5 @@
+.dockerignore
+
+students.json
+Dockerfile
+docker-compose.yml

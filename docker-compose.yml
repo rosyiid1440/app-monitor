@@ -1,0 +1,15 @@
+services:
+  teacher_app:
+    build:
+      context: ./teacher_app
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      # Menyimpan data siswa secara persisten di luar container
+      - ./teacher_app/students.json:/app/students.json
+    environment:
+      # Ganti dengan username dan password yang Anda inginkan
+      - ADMIN_USER=guru
+      - ADMIN_PASSWORD=rahasia
+    restart: unless-stopped

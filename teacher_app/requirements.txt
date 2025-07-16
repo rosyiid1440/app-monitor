@@ -1,0 +1,9 @@
+pyqt5
+websockets
+mss
+pillow
+pyautogui
+fastapi
+uvicorn[standard]
+getmac
+wakeonlan
